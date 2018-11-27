@@ -10,5 +10,11 @@ for file in ./*; do
     fi
 done
 
+# Update site to the latest config and contents
+rm -rf src/public
+cd src
+hugo
+cd ..
+
 # Copy a new one
 cp -r src/public/* .

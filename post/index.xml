@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My Dummy Scribbles on habibrosyad</title>
-    <link>/post/</link>
+    <link>https://habibrosyad.github.io/post/</link>
     <description>Recent content in My Dummy Scribbles on habibrosyad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 23 Nov 2018 17:33:37 +1100</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://habibrosyad.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Installing Hugo</title>
-      <link>/post/installing-hugo/</link>
+      <link>https://habibrosyad.github.io/post/installing-hugo/</link>
       <pubDate>Fri, 23 Nov 2018 23:57:05 +1100</pubDate>
       
-      <guid>/post/installing-hugo/</guid>
+      <guid>https://habibrosyad.github.io/post/installing-hugo/</guid>
       <description>&lt;h2 id=&#34;step-1-install-hugo&#34;&gt;Step 1. Install Hugo&lt;/h2&gt;
 
 &lt;p&gt;Goto &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;hugo releases&lt;/a&gt; and download the
@@ -25,10 +25,10 @@ appropriate version for your os and architecture.&lt;/p&gt;</description>
     
     <item>
       <title>Migrate From Jekyll</title>
-      <link>/post/migrate-from-jekyll/</link>
+      <link>https://habibrosyad.github.io/post/migrate-from-jekyll/</link>
       <pubDate>Fri, 23 Nov 2018 23:49:38 +1100</pubDate>
       
-      <guid>/post/migrate-from-jekyll/</guid>
+      <guid>https://habibrosyad.github.io/post/migrate-from-jekyll/</guid>
       <description>&lt;h2 id=&#34;move-static-content-to-static&#34;&gt;Move static content to &lt;code&gt;static&lt;/code&gt;&lt;/h2&gt;
 
 &lt;p&gt;Jekyll has a rule that any directory not starting with &lt;code&gt;_&lt;/code&gt; will be copied as-is to the &lt;code&gt;_site&lt;/code&gt; output.&lt;/p&gt;</description>
@@ -36,10 +36,10 @@ appropriate version for your os and architecture.&lt;/p&gt;</description>
     
     <item>
       <title>Hugo Template Primer</title>
-      <link>/post/hugo-template-primer/</link>
+      <link>https://habibrosyad.github.io/post/hugo-template-primer/</link>
       <pubDate>Fri, 23 Nov 2018 15:40:21 +1100</pubDate>
       
-      <guid>/post/hugo-template-primer/</guid>
+      <guid>https://habibrosyad.github.io/post/hugo-template-primer/</guid>
       <description>&lt;p&gt;Hugo uses the excellent &lt;a href=&#34;http://golang.org/&amp;gt;&#34;&gt;go&lt;/a&gt; &lt;a href=&#34;http://golang.org/pkg/html/template/&amp;gt;&#34;&gt;html/template&lt;/a&gt; library for
 its template engine. It is an extremely lightweight engine that provides a very
 small amount of logic.&lt;/p&gt;</description>
@@ -47,10 +47,10 @@ small amount of logic.&lt;/p&gt;</description>
     
     <item>
       <title>Create a New Theme Lorem Ipsum Dolor</title>
-      <link>/post/create-a-new-theme/</link>
+      <link>https://habibrosyad.github.io/post/create-a-new-theme/</link>
       <pubDate>Fri, 23 Nov 2018 15:18:09 +1100</pubDate>
       
-      <guid>/post/create-a-new-theme/</guid>
+      <guid>https://habibrosyad.github.io/post/create-a-new-theme/</guid>
       <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
 
 &lt;p&gt;This tutorial will show you how to create a simple theme in Hugo.&lt;/p&gt;</description>
