@@ -1,0 +1,16 @@
+/*
+ * Waving hand text emoticon animation for the jumbotron
+ */
+
+.waver {
+	display: inline-flex;
+	text-align: center;
+	animation: waver 0.65s alternate infinite;
+	transform-origin: 0% 100%;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes waver {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(20deg);}
+}
