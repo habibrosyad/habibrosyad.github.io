@@ -644,10 +644,11 @@ pre code {
 }
 
 .not-found-icon {
-    font-size: 2rem;
+    font-size: 5rem;
 }
 
 .not-found-text {
+    font-size: 2rem;
     color: #999;
 }
 
