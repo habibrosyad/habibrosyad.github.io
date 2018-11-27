@@ -8,24 +8,29 @@
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	
-    <title>@habibrosyad</title>
+    <title>habibrosyad &ndash; habibrosyad</title>
     
     <meta name="description" content="" />
     
-    <link rel="canonical" href="http://example.org/" />
+    <link rel="canonical" href="/" />
+    
     
     <link rel="preload" href="/css/normalize.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" as="style" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" onload="this.rel='stylesheet'">
-    <link rel="preload" href="/css/main.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="/css/theme.css" as="style" onload="this.rel='stylesheet'">
     
-    <link rel="preload" href="/css/custom.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="/css/animation.css" as="style" onload="this.rel='stylesheet'">
+    
+    <link rel="preload" href="/css/syntax.css" as="style" onload="this.rel='stylesheet'">
     
     <noscript>
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/theme.css">
         
-        <link rel="stylesheet" href="/css/custom.css">
+        <link rel="stylesheet" href="/css/animation.css">
+        
+        <link rel="stylesheet" href="/css/syntax.css">
         
     </noscript>
     <script>
@@ -35,60 +40,72 @@
      !function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(a){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
     </script>
 </head><body>
-    	<div class="container">
-<header>
-	<nav id="navbar">
-		<a id="navbar-brand" href="http://example.org/">@habibrosyad</a>
-		<button id="navbar-toggler" type="button"></button>
+    	<div class="container"><header class="header d-flex">
+	<a class="logo-text d-flex link-unstyled" href="/">habibrosyad</a>
+
+<nav id="menu">
+	<ul class="d-flex list-unstyled">
 		
-		<ul id="navbar-nav">
-			
-			<li><a class="" href="/post/" title="Posts">Posts</a></li>
-			
-			<li><a class="" href="/about/" title="About Me">About Me</a></li>
-			
-			<li><a class="" href="/contact/" title="Contact">Contact</a></li>
-			
-		</ul>
+		<li><a class="link-unstyled " href="/post/" title="Posts">Posts</a></li>
 		
-	</nav>
-</header><main><section id="jumbotron">
+		<li><a class="link-unstyled " href="/about/" title="About Me">About Me</a></li>
+		
+		<li><a class="link-unstyled " href="/contact/" title="Contact">Contact</a></li>
+		
+	</ul>
+</nav>
+<a id="menu-toggler" href="#"></a>
+</header><main><section class="jumbotron">
 	
-	<p class="jumbotron-primary">Hi ( ･,･)<span class='waver'>ノ</span>, I'm <strong>Habib</strong>,<br>I love building <strong>awesome back-end</strong></p>
+	<p class="jumbotron-primary">Hi ( &#xFF65;,&#xFF65;)<span class='waver'>&#x30CE;</span>, I&rsquo;m <strong>Habib</strong>,<br>
+I love building <strong>awesome <span class='nowrap'>back-end</span></strong></p>
 	
 	
-	<p class="jumbotron-secondary">I use this site to note things that I've learned along the way in my journey as a back-end developer. However, sometimes, touching a little bit of font-end were inevitable too, seriously!</p>
+	<p class="jumbotron-secondary">I use this site to note things that I&rsquo;ve learned along the way in my journey as a back-end developer.
+However, sometimes, touching a little bit of font-end were inevitable too, seriously!</p>
 	
 </section>
 
 
 <hr>
-<section id="recent-posts" class="two-cols-section">
-	<h3 class="section-title">My recent posts</h3>
-	<div class="section-content">
-		<ul>
+<section class="homepage-section recent-posts">
+	<h3 class="homepage-section-title">My recent dummy posts</h3>
+	<div class="homepage-section-content">
+		<ul class="list-unstyled">
 			
 			<li>
-				<a href="http://example.org/post/hugo-template-primer/">Hugo Template Primer</a>
-				<span class="content-meta">23 Nov 2018 · 7 min read</span>
+				<a class="link-unstyled" href="/post/installing-hugo/">Installing Hugo</a>
+				<span class="page-meta">23 Nov 2018 · 2 min read</span>
 			</li>
 			
 			<li>
-				<a href="http://example.org/post/create-a-new-theme/">Create a New Theme</a>
-				<span class="content-meta">23 Nov 2018 · 34 min read</span>
+				<a class="link-unstyled" href="/post/migrate-from-jekyll/">Migrate From Jekyll</a>
+				<span class="page-meta">23 Nov 2018 · 4 min read</span>
+			</li>
+			
+			<li>
+				<a class="link-unstyled" href="/post/hugo-template-primer/">Hugo Template Primer</a>
+				<span class="page-meta">23 Nov 2018 · 7 min read</span>
 			</li>
 			
 		</ul>
+		
+		
+		<a class="btn" href="/post/">Check more posts...</a>
+		
 	</div>
 </section>
 
-	        </main><footer>
+	        </main><footer class="footer">
+  <hr>
   <p>
     
     <span>&copy; 2018</span><br>
     
     
-    <span>Made and managed by <a href='https://github.com/habibrosyad'>@habibrosyad</a><br>with <span class='fa fa-heart'></span> and <a href='https://gohugo.io'>HUGO</a></span><br>
+    <span>Made and managed by <a href="https://github.com/habibrosyad">@habibrosyad</a><br>
+with <span class='fa fa-heart'></span>, <a href="https://gohugo.io">HUGO</a>, and in-house crafted
+<a href="https://github.com/habibrosyad/carica">theme</a></span><br>
     
     
     
@@ -120,12 +137,18 @@
 </footer>
 
 
-<script src="http://example.org/js/vendor/modernizr-3.6.0.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="http:\/\/example.org\/js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-<script src="http://example.org/js/plugins.js"></script>
-<script src="http://example.org/js/main.js"></script>
 
+
+<script src="/js/plugins.js"></script>
+<script src="/js/theme.js"></script>
+
+
+
+<script>
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-45571573-3', 'auto'); ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </div>
     </body>
 </html>

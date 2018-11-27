@@ -7,24 +7,49 @@
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	
-    <title>Hugo Template Primer &ndash; @habibrosyad</title>
+    <title>Hugo Template Primer &ndash; habibrosyad</title>
     
-    <meta name="description" content="" />
+    <meta name="description" content="Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic.
+" />
     
-    <link rel="canonical" href="http://example.org/" />
+    <link rel="canonical" href="/" />
+    
+    
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="/post/hugo-template-primer/">
+    <meta property="og:title" content="Hugo Template Primer">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic.
+">
+    <meta property="og:site_name" content="habibrosyad">
+    <meta property="og:locale" content="en-us">
+    
+    <meta name="twitter:card" content="summary">
+    
+    
+    <meta name="twitter:url" content="/post/hugo-template-primer/">
+    <meta name="twitter:title" content="Hugo Template Primer">
+    <meta name="twitter:description" content="Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic.
+">
+    <meta name="twitter:image" content="">
+    
     
     <link rel="preload" href="/css/normalize.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" as="style" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" onload="this.rel='stylesheet'">
-    <link rel="preload" href="/css/main.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="/css/theme.css" as="style" onload="this.rel='stylesheet'">
     
-    <link rel="preload" href="/css/custom.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="/css/animation.css" as="style" onload="this.rel='stylesheet'">
+    
+    <link rel="preload" href="/css/syntax.css" as="style" onload="this.rel='stylesheet'">
     
     <noscript>
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/theme.css">
         
-        <link rel="stylesheet" href="/css/custom.css">
+        <link rel="stylesheet" href="/css/animation.css">
+        
+        <link rel="stylesheet" href="/css/syntax.css">
         
     </noscript>
     <script>
@@ -34,28 +59,28 @@
      !function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(a){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
     </script>
 </head><body>
-    	<div class="container">
-<header>
-	<nav id="navbar">
-		<a id="navbar-brand" href="http://example.org/">@habibrosyad</a>
-		<button id="navbar-toggler" type="button"></button>
+    	<div class="container"><header class="header d-flex">
+	<a class="logo-text d-flex link-unstyled" href="/">habibrosyad</a>
+
+<nav id="menu">
+	<ul class="d-flex list-unstyled">
 		
-		<ul id="navbar-nav">
-			
-			<li><a class="" href="/post/" title="Posts">Posts</a></li>
-			
-			<li><a class="" href="/about/" title="About Me">About Me</a></li>
-			
-			<li><a class="" href="/contact/" title="Contact">Contact</a></li>
-			
-		</ul>
+		<li><a class="link-unstyled " href="/post/" title="Posts">Posts</a></li>
 		
-	</nav>
+		<li><a class="link-unstyled " href="/about/" title="About Me">About Me</a></li>
+		
+		<li><a class="link-unstyled " href="/contact/" title="Contact">Contact</a></li>
+		
+	</ul>
+</nav>
+<a id="menu-toggler" href="#"></a>
 </header><main>
-	<article>
-		<span class="content-meta">23 Nov 2018 · 7 min read</span>
-		<h1>Hugo Template Primer</h1>
-		<p>Hugo uses the excellent <a href="http://golang.org/&gt;">go</a> <a href="http://golang.org/pkg/html/template/&gt;">html/template</a> library for
+	<article class="page">
+		<span class="page-meta">23 Nov 2018 · 7 min read</span>
+		<h1 class="page-title">Hugo Template Primer</h1>
+		<div class="d-flex">
+			<div class="page-content">
+				<p>Hugo uses the excellent <a href="http://golang.org/&gt;">go</a> <a href="http://golang.org/pkg/html/template/&gt;">html/template</a> library for
 its template engine. It is an extremely lightweight engine that provides a very
 small amount of logic.</p>
 
@@ -353,13 +378,10 @@ notoc: true
 parameters, which are values which will be available to you in chrome.</p>
 
 <p>For instance, you might declare:</p>
-
-<pre><code class="language-yaml">params:
-  CopyrightHTML: &quot;Copyright &amp;#xA9; 2013 John Doe. All Rights Reserved.&quot;
-  TwitterUser: &quot;spf13&quot;
-  SidebarRecentLimit: 5
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">params<span class="p">:</span><span class="w">
+</span><span class="w">  </span>CopyrightHTML<span class="p">:</span><span class="w"> </span><span class="s2">&#34;Copyright &amp;#xA9; 2013 John Doe. All Rights Reserved.&#34;</span><span class="w">
+</span><span class="w">  </span>TwitterUser<span class="p">:</span><span class="w"> </span><span class="s2">&#34;spf13&#34;</span><span class="w">
+</span><span class="w">  </span>SidebarRecentLimit<span class="p">:</span><span class="w"> </span><span class="m">5</span></code></pre></div>
 <p>Within a footer layout, you might then declare a <code>&lt;footer&gt;</code> which is only
 provided if the <code>CopyrightHTML</code> parameter is provided, and if it is given,
 you would declare it to be HTML-safe, so that the HTML entity is not escaped
@@ -392,32 +414,78 @@ so, such as in this example:</p>
   {{end}}&lt;/ul&gt;
 &lt;/nav&gt;
 </code></pre>
-<div id="disqus_thread"></div>
-<script>
-    var disqus_config = function () {
-        this.page.url = 'http:\/\/example.org\/post\/hugo-template-primer\/';  
-        this.page.identifier = 'f848393a29f1ddaffb0c6fb8e709cf3d'; 
-    };
+<hr>
+<section class="post-section">
+	<p>Share on:</p>
+	
+	<a rel="nofollow noopener noreferrer" href="http://www.facebook.com/sharer/sharer.php?u=%2fpost%2fhugo-template-primer%2f&title=Hugo%20Template%20Primer" target="_blank">
+		<span class="fab fa-facebook"></span>&nbsp;Facebook
+	</a>
+	
+	<a ref="nofollow noopener noreferrer" href="https://twitter.com/intent/tweet?url=%2fpost%2fhugo-template-primer%2f&text=Hugo%20Template%20Primer" target="_blank">
+		<span class="fab fa-twitter"></span>&nbsp;Twitter
+	</a>
+	
+	<a ref="nofollow noopener noreferrer" href="http://www.linkedin.com/shareArticle?mini=true&url=%2fpost%2fhugo-template-primer%2f&title=Hugo%20Template%20Primer&source=habibrosyad" target="_blank">
+		<span class="fab fa-linkedin"></span>&nbsp;LinkedIn
+	</a>
+</section>
 
-    (function() {
-        var d = document, s = d.createElement('script');
-        s.src = 'https://habibrosyad.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
+<div id="disqus"></div>
+<script>
+    var disqus_options = {
+        scriptUrl: '//habibrosyad.disqus.com/embed.js',
+        disqusConfig: function() {
+            this.page.title       = 'Hugo Template Primer';
+            this.page.url         = '\/post\/hugo-template-primer\/';
+            this.page.identifier  = 'f848393a29f1ddaffb0c6fb8e709cf3d';
+        }
+    }
 </script>
 <noscript>
     Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
 </noscript>
-</article>
+</div>
+<aside class="toc">
+	<h4>Table of Contents</h4>
+	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#introduction-to-go-templates">Introduction to Go Templates</a></li>
+<li><a href="#basic-syntax">Basic Syntax</a></li>
+<li><a href="#variables">Variables</a></li>
+<li><a href="#functions">Functions</a></li>
+<li><a href="#includes">Includes</a></li>
+<li><a href="#logic">Logic</a>
+<ul>
+<li><a href="#iteration">Iteration</a></li>
+<li><a href="#conditionals">Conditionals</a></li>
+</ul></li>
+<li><a href="#pipes">Pipes</a></li>
+<li><a href="#context-aka-the-dot">Context (aka. the dot)</a></li>
+</ul></li>
+<li><a href="#hugo-parameters">Hugo Parameters</a>
+<ul>
+<li><a href="#using-content-page-parameters">Using Content (page) Parameters</a></li>
+<li><a href="#using-site-config-parameters">Using Site (config) Parameters</a></li>
+</ul></li>
+</ul>
+</nav>
+</aside>
+</div>
+	</article>
 
-	        </main><footer>
+	        </main><footer class="footer">
+  <hr>
   <p>
     
     <span>&copy; 2018</span><br>
     
     
-    <span>Made and managed by <a href='https://github.com/habibrosyad'>@habibrosyad</a><br>with <span class='fa fa-heart'></span> and <a href='https://gohugo.io'>HUGO</a></span><br>
+    <span>Made and managed by <a href="https://github.com/habibrosyad">@habibrosyad</a><br>
+with <span class='fa fa-heart'></span>, <a href="https://gohugo.io">HUGO</a>, and in-house crafted
+<a href="https://github.com/habibrosyad/carica">theme</a></span><br>
     
     
     
@@ -449,12 +517,18 @@ so, such as in this example:</p>
 </footer>
 
 
-<script src="http://example.org/js/vendor/modernizr-3.6.0.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="http:\/\/example.org\/js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-<script src="http://example.org/js/plugins.js"></script>
-<script src="http://example.org/js/main.js"></script>
 
+
+<script src="/js/plugins.js"></script>
+<script src="/js/theme.js"></script>
+
+
+
+<script>
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-45571573-3', 'auto'); ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </div>
     </body>
 </html>

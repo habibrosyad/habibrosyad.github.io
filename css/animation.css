@@ -14,3 +14,17 @@
 	0% {transform: rotate(0deg);}
 	100% {transform: rotate(20deg);}
 }
+
+/*
+ * Blinking animation of text emoticon
+ */
+
+.blink {
+  animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}

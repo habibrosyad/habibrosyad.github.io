@@ -3,39 +3,72 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/post/hugo-template-primer/</loc>
+    <loc>/post/installing-hugo/</loc>
+    <lastmod>2018-11-23T23:57:05+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/migrate-from-jekyll/</loc>
+    <lastmod>2018-11-23T23:49:38+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2018-11-23T17:33:37+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/contact/</loc>
+    <lastmod>2018-11-23T17:33:30+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/hugo-template-primer/</loc>
     <lastmod>2018-11-23T15:40:21+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2018-11-23T15:38:46+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/create-a-new-theme/</loc>
+    <loc>/post/create-a-new-theme/</loc>
     <lastmod>2018-11-23T15:18:09+11:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
-    <lastmod>2018-11-23T15:40:21+11:00</lastmod>
+    <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>/tags/hugo/</loc>
+    <lastmod>2018-11-23T23:57:05+11:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/post/</loc>
-    <lastmod>2018-11-23T15:40:21+11:00</lastmod>
+    <loc>/tags/install/</loc>
+    <lastmod>2018-11-23T23:57:05+11:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>/tags/</loc>
+    <lastmod>2018-11-23T23:57:05+11:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/test/</loc>
+    <lastmod>2018-11-23T23:57:05+11:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2018-11-23T23:57:05+11:00</lastmod>
     <priority>0</priority>
   </url>
   

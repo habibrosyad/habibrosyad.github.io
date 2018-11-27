@@ -7,24 +7,49 @@
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	
-    <title>Create a New Theme &ndash; @habibrosyad</title>
+    <title>Create a New Theme Lorem Ipsum Dolor &ndash; habibrosyad</title>
     
-    <meta name="description" content="" />
+    <meta name="description" content="Introduction This tutorial will show you how to create a simple theme in Hugo.
+" />
     
-    <link rel="canonical" href="http://example.org/" />
+    <link rel="canonical" href="/" />
+    
+    
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="/post/create-a-new-theme/">
+    <meta property="og:title" content="Create a New Theme Lorem Ipsum Dolor">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="Introduction This tutorial will show you how to create a simple theme in Hugo.
+">
+    <meta property="og:site_name" content="habibrosyad">
+    <meta property="og:locale" content="en-us">
+    
+    <meta name="twitter:card" content="summary">
+    
+    
+    <meta name="twitter:url" content="/post/create-a-new-theme/">
+    <meta name="twitter:title" content="Create a New Theme Lorem Ipsum Dolor">
+    <meta name="twitter:description" content="Introduction This tutorial will show you how to create a simple theme in Hugo.
+">
+    <meta name="twitter:image" content="">
+    
     
     <link rel="preload" href="/css/normalize.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" as="style" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" onload="this.rel='stylesheet'">
-    <link rel="preload" href="/css/main.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="/css/theme.css" as="style" onload="this.rel='stylesheet'">
     
-    <link rel="preload" href="/css/custom.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="/css/animation.css" as="style" onload="this.rel='stylesheet'">
+    
+    <link rel="preload" href="/css/syntax.css" as="style" onload="this.rel='stylesheet'">
     
     <noscript>
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/theme.css">
         
-        <link rel="stylesheet" href="/css/custom.css">
+        <link rel="stylesheet" href="/css/animation.css">
+        
+        <link rel="stylesheet" href="/css/syntax.css">
         
     </noscript>
     <script>
@@ -34,28 +59,28 @@
      !function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(a){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
     </script>
 </head><body>
-    	<div class="container">
-<header>
-	<nav id="navbar">
-		<a id="navbar-brand" href="http://example.org/">@habibrosyad</a>
-		<button id="navbar-toggler" type="button"></button>
+    	<div class="container"><header class="header d-flex">
+	<a class="logo-text d-flex link-unstyled" href="/">habibrosyad</a>
+
+<nav id="menu">
+	<ul class="d-flex list-unstyled">
 		
-		<ul id="navbar-nav">
-			
-			<li><a class="" href="/post/" title="Posts">Posts</a></li>
-			
-			<li><a class="" href="/about/" title="About Me">About Me</a></li>
-			
-			<li><a class="" href="/contact/" title="Contact">Contact</a></li>
-			
-		</ul>
+		<li><a class="link-unstyled " href="/post/" title="Posts">Posts</a></li>
 		
-	</nav>
+		<li><a class="link-unstyled " href="/about/" title="About Me">About Me</a></li>
+		
+		<li><a class="link-unstyled " href="/contact/" title="Contact">Contact</a></li>
+		
+	</ul>
+</nav>
+<a id="menu-toggler" href="#"></a>
 </header><main>
-	<article>
-		<span class="content-meta">23 Nov 2018 · 34 min read</span>
-		<h1>Create a New Theme</h1>
-		<h3 id="introduction">Introduction</h3>
+	<article class="page">
+		<span class="page-meta">23 Nov 2018 · 34 min read</span>
+		<h1 class="page-title">Create a New Theme Lorem Ipsum Dolor</h1>
+		<div class="d-flex">
+			<div class="page-content">
+				<h3 id="introduction">Introduction</h3>
 
 <p>This tutorial will show you how to create a simple theme in Hugo.</p>
 
@@ -66,16 +91,13 @@
 <p>In this tutorial, commands that you enter will start with the &ldquo;$&rdquo; prompt. The output will follow. Lines that start with &ldquo;#&rdquo; are comments that I&rsquo;ve added to explain a point. When I show updates to a file, the &ldquo;:wq&rdquo; on the last line means to save the file.</p>
 
 <p>Here&rsquo;s an example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">main</span>
 
-<pre><code>package main
+<span class="kn">import</span> <span class="s">&#34;fmt&#34;</span>
 
-import &quot;fmt&quot;
-
-func main() {
-    fmt.Print(&quot;Hello&quot;)
-}
-</code></pre>
-
+<span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Print</span><span class="p">(</span><span class="s">&#34;Hello&#34;</span><span class="p">)</span>
+<span class="p">}</span></code></pre></div>
 <blockquote>
 <p>There are a few concepts that you need to understand before creating a theme.</p>
 </blockquote>
@@ -498,8 +520,7 @@ in 1 ms
 <h3 id="make-a-static-home-page">Make a Static Home Page</h3>
 
 <p>Right now, that page is empty because we don&rsquo;t have any content and we don&rsquo;t have any logic in the template. Let&rsquo;s change that by adding some text to the template.</p>
-
-<pre><code class="language-html">$ vi themes/zafta/layouts/index.html
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ vi themes/zafta/layouts/index.html
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
@@ -508,9 +529,7 @@ in 1 ms
 &lt;/html&gt;
 :wq
 
-$
-</code></pre>
-
+$</code></pre></div>
 <p>Build the web site and then verify the results.</p>
 
 <pre><code>$ hugo --verbose
@@ -652,15 +671,12 @@ $
 </code></pre>
 
 <p>The output says that it created 2 pages. Those are our new posts:</p>
-
-<pre><code>$ find public -type f -name '*.html' | xargs ls -l
--rw-r--r--  1 quoha  staff  78 Sep 29 22:13 public/index.html
--rw-r--r--  1 quoha  staff   0 Sep 29 22:13 public/post/first/index.html
--rw-r--r--  1 quoha  staff   0 Sep 29 22:13 public/post/index.html
--rw-r--r--  1 quoha  staff   0 Sep 29 22:13 public/post/second/index.html
-$
-</code></pre>
-
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ find public -type f -name <span class="s1">&#39;*.html&#39;</span> <span class="p">|</span> xargs ls -l
+-rw-r--r--  <span class="m">1</span> quoha  staff  <span class="m">78</span> Sep <span class="m">29</span> <span class="m">22</span>:13 public/index.html
+-rw-r--r--  <span class="m">1</span> quoha  staff   <span class="m">0</span> Sep <span class="m">29</span> <span class="m">22</span>:13 public/post/first/index.html
+-rw-r--r--  <span class="m">1</span> quoha  staff   <span class="m">0</span> Sep <span class="m">29</span> <span class="m">22</span>:13 public/post/index.html
+-rw-r--r--  <span class="m">1</span> quoha  staff   <span class="m">0</span> Sep <span class="m">29</span> <span class="m">22</span>:13 public/post/second/index.html
+$</code></pre></div>
 <p>The new files are empty because because the templates used to generate the content are empty. The homepage doesn&rsquo;t show the new content, either. We have to update the templates to add the posts.</p>
 
 <h3 id="list-and-single-templates">List and Single Templates</h3>
@@ -674,21 +690,18 @@ $
 <h3 id="add-content-to-the-homepage">Add Content to the Homepage</h3>
 
 <p>The home page will contain a list of posts. Let&rsquo;s update its template to add the posts that we just created. The logic in the template will run every time we build the site.</p>
-
-<pre><code>$ vi themes/zafta/layouts/index.html
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ vi themes/zafta/layouts/index.html
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
-  {{ range first 10 .Data.Pages }}
-    &lt;h1&gt;{{ .Title }}&lt;/h1&gt;
-  {{ end }}
+  <span class="o">{{</span> range first <span class="m">10</span> .Data.Pages <span class="o">}}</span>
+    &lt;h1&gt;<span class="o">{{</span> .Title <span class="o">}}</span>&lt;/h1&gt;
+  <span class="o">{{</span> end <span class="o">}}</span>
 &lt;/body&gt;
 &lt;/html&gt;
 :wq
 
-$
-</code></pre>
-
+$</code></pre></div>
 <p>Hugo uses the Go template engine. That engine scans the template files for commands which are enclosed between &ldquo;{{&rdquo; and &ldquo;}}&rdquo;. In our template, the commands are:</p>
 
 <ol>
@@ -1132,32 +1145,132 @@ $ vi themes/zafta/layouts/_default/single.html
 <h3 id="don-t-repeat-yourself">Don&rsquo;t Repeat Yourself</h3>
 
 <p>DRY is a good design goal and Hugo does a great job supporting it. Part of the art of a good template is knowing when to add a new template and when to update an existing one. While you&rsquo;re figuring that out, accept that you&rsquo;ll be doing some refactoring. Hugo makes that easy and fast, so it&rsquo;s okay to delay splitting up a template.</p>
-<div id="disqus_thread"></div>
-<script>
-    var disqus_config = function () {
-        this.page.url = 'http:\/\/example.org\/post\/create-a-new-theme\/';  
-        this.page.identifier = 'd594fa79312f4f39287f5a2990482c9d'; 
-    };
+<hr>
+<section class="post-section">
+	<p>Share on:</p>
+	
+	<a rel="nofollow noopener noreferrer" href="http://www.facebook.com/sharer/sharer.php?u=%2fpost%2fcreate-a-new-theme%2f&title=Create%20a%20New%20Theme%20Lorem%20Ipsum%20Dolor" target="_blank">
+		<span class="fab fa-facebook"></span>&nbsp;Facebook
+	</a>
+	
+	<a ref="nofollow noopener noreferrer" href="https://twitter.com/intent/tweet?url=%2fpost%2fcreate-a-new-theme%2f&text=Create%20a%20New%20Theme%20Lorem%20Ipsum%20Dolor" target="_blank">
+		<span class="fab fa-twitter"></span>&nbsp;Twitter
+	</a>
+	
+	<a ref="nofollow noopener noreferrer" href="http://www.linkedin.com/shareArticle?mini=true&url=%2fpost%2fcreate-a-new-theme%2f&title=Create%20a%20New%20Theme%20Lorem%20Ipsum%20Dolor&source=habibrosyad" target="_blank">
+		<span class="fab fa-linkedin"></span>&nbsp;LinkedIn
+	</a>
+</section>
 
-    (function() {
-        var d = document, s = d.createElement('script');
-        s.src = 'https://habibrosyad.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
+<div id="disqus"></div>
+<script>
+    var disqus_options = {
+        scriptUrl: '//habibrosyad.disqus.com/embed.js',
+        disqusConfig: function() {
+            this.page.title       = 'Create a New Theme Lorem Ipsum Dolor';
+            this.page.url         = '\/post\/create-a-new-theme\/';
+            this.page.identifier  = 'd594fa79312f4f39287f5a2990482c9d';
+        }
+    }
 </script>
 <noscript>
     Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
 </noscript>
-</article>
+</div>
+<aside class="toc">
+	<h4>Table of Contents</h4>
+	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#skins">Skins</a></li>
+<li><a href="#the-home-page">The Home Page</a></li>
+<li><a href="#site-configuration-file">Site Configuration File</a></li>
+<li><a href="#content">Content</a>
+<ul>
+<li><a href="#front-matter">Front Matter</a></li>
+<li><a href="#markdown">Markdown</a></li>
+</ul></li>
+<li><a href="#template-files">Template Files</a>
+<ul>
+<li><a href="#single-template">Single Template</a></li>
+<li><a href="#list-template">List Template</a></li>
+<li><a href="#partial-template">Partial Template</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#create-a-new-site">Create a New Site</a>
+<ul>
+<li><a href="#generate-the-html-for-the-new-site">Generate the HTML For the New Site</a></li>
+<li><a href="#test-the-new-site">Test the New Site</a></li>
+</ul></li>
+<li><a href="#create-a-new-theme">Create a New Theme</a>
+<ul>
+<li><a href="#create-a-skeleton">Create a Skeleton</a></li>
+<li><a href="#update-the-configuration-file-to-use-the-theme">Update the Configuration File to Use the Theme</a></li>
+<li><a href="#generate-the-site">Generate the Site</a>
+<ul>
+<li><a href="#the-home-page-1">The Home Page</a></li>
+<li><a href="#the-magic-of-static">The Magic of Static</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#the-theme-development-cycle">The Theme Development Cycle</a>
+<ul>
+<li><a href="#purge-the-public-directory">Purge the public/ Directory</a></li>
+<li><a href="#hugo-s-watch-option">Hugo&rsquo;s Watch Option</a></li>
+<li><a href="#live-reload">Live Reload</a></li>
+<li><a href="#development-commands">Development Commands</a></li>
+</ul></li>
+<li><a href="#update-the-home-page-template">Update the Home Page Template</a>
+<ul>
+<li><a href="#make-a-static-home-page">Make a Static Home Page</a>
+<ul>
+<li><a href="#live-reload-1">Live Reload</a></li>
+</ul></li>
+<li><a href="#build-a-dynamic-home-page">Build a &ldquo;Dynamic&rdquo; Home Page</a>
+<ul>
+<li><a href="#create-new-posts">Create New Posts</a></li>
+</ul></li>
+<li><a href="#list-and-single-templates">List and Single Templates</a></li>
+<li><a href="#add-content-to-the-homepage">Add Content to the Homepage</a></li>
+<li><a href="#add-content-to-the-posts">Add Content to the Posts</a>
+<ul>
+<li><a href="#update-the-template-file">Update the Template File</a></li>
+</ul></li>
+<li><a href="#linking-to-content">Linking to Content</a></li>
+<li><a href="#create-a-post-listing">Create a Post Listing</a></li>
+</ul></li>
+<li><a href="#creating-top-level-pages">Creating Top Level Pages</a></li>
+<li><a href="#sharing-templates">Sharing Templates</a>
+<ul>
+<li><a href="#create-the-header-and-footer-partials">Create the Header and Footer Partials</a></li>
+<li><a href="#update-the-home-page-template-to-use-the-partials">Update the Home Page Template to Use the Partials</a></li>
+<li><a href="#update-the-default-single-template-to-use-the-partials">Update the Default Single Template to Use the Partials</a></li>
+</ul></li>
+<li><a href="#add-date-published-to-posts">Add “Date Published” to Posts</a>
+<ul>
+<li><a href="#add-date-published-to-the-template">Add “Date Published” to the Template</a></li>
+<li><a href="#don-t-repeat-yourself">Don&rsquo;t Repeat Yourself</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+</aside>
+</div>
+	</article>
 
-	        </main><footer>
+	        </main><footer class="footer">
+  <hr>
   <p>
     
     <span>&copy; 2018</span><br>
     
     
-    <span>Made and managed by <a href='https://github.com/habibrosyad'>@habibrosyad</a><br>with <span class='fa fa-heart'></span> and <a href='https://gohugo.io'>HUGO</a></span><br>
+    <span>Made and managed by <a href="https://github.com/habibrosyad">@habibrosyad</a><br>
+with <span class='fa fa-heart'></span>, <a href="https://gohugo.io">HUGO</a>, and in-house crafted
+<a href="https://github.com/habibrosyad/carica">theme</a></span><br>
     
     
     
@@ -1189,12 +1302,18 @@ $ vi themes/zafta/layouts/_default/single.html
 </footer>
 
 
-<script src="http://example.org/js/vendor/modernizr-3.6.0.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="http:\/\/example.org\/js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-<script src="http://example.org/js/plugins.js"></script>
-<script src="http://example.org/js/main.js"></script>
 
+
+<script src="/js/plugins.js"></script>
+<script src="/js/theme.js"></script>
+
+
+
+<script>
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-45571573-3', 'auto'); ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </div>
     </body>
 </html>
